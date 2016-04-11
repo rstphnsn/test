@@ -1,18 +1,12 @@
 <div class="view view-home" ng-controller="HomeController as home">
 
-    <div class="mod-header" role="banner" ng-include="'templates/partials/header.html'"></div>
-
     <div id="content" rol="main">
 
-        <div class="row">
-            <div class="col-16">
-                <h1>{{home.title}}</h1>
-                <h2>{{home.version}}</h2>
-                <p>
-                    <a ui-sref="questions">Questions</a>
-                </p>
-            </div>
-        </div>
+        <h1>{{home.title}}</h1>
+        <h2>{{home.version}}</h2>
+        <p>
+            <a ng-href="#/page">Example</a>
+        </p>
 
     </div>
 
