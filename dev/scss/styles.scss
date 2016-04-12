@@ -5,15 +5,11 @@
 MASTER SCSS FILE
 
 --------------
-NOTES
---------------
-This file contains @import includes for all of the files that are compiled into the
-master styles.css file
-
---------------
 CONTENTS
 --------------
 ## LIBS
+## FONTS
+## LAYOUT
 ## MODULES
 
 ---------------------------------------------------------------------------------------
@@ -23,3 +19,133 @@ CONTENTS
 //  ## LIBS  ------------------------------------------------------------------------//
 
 @import "libs/normalize.3.0.2.scss";
+
+
+//  ## FONTS  -----------------------------------------------------------------------//
+
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/proxima_nova-regular-webfont.eot);
+    src: url(../fonts/proxima_nova-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/proxima_nova-regular-webfont.woff2) format('woff2'),
+        url(../fonts/proxima_nova-regular-webfont.woff) format('woff'),
+        url(../fonts/proxima_nova-regular-webfont.ttf) format('truetype'),
+        url(../fonts/proxima_nova-regular-webfont.svg#proxima) format('svg');
+    font-weight:  400;
+    font-style:normal
+}
+
+
+//  ## LAYOUT  ----------------------------------------------------------------------//
+
+body {
+    font-family: proxima;
+    padding: 50px;
+}
+
+
+//  ## MODULES  ---------------------------------------------------------------------//
+
+.mod-matter-list table {
+    width: 100%;
+}
+
+.mod-matter-list thead,
+.mod-matter-list tfoot {
+    background-color: #EFF3F6;
+}
+
+.mod-matter-list tr {
+    border-bottom: 1px solid #DDD;
+}
+
+.mod-matter-list th,
+.mod-matter-list td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.mod-matter-list th span {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    padding-right: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.mod-matter-list thead th span:before,
+.mod-matter-list thead th span:after {
+    border-color: transparent transparent #999 transparent;
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 0;
+}
+
+.mod-matter-list thead th span:after {
+    border-color: #999 transparent transparent transparent;
+    border-width: 3px 3px 0 3px;
+    top: 8px;
+}
+
+.mod-matter-list .status {
+    font-size: 12px;
+}
+
+.mod-matter-list td.estimate {
+    width: 80px;
+}
+
+.mod-matter-list td.estimate label {
+    cursor: pointer;
+    display: block;
+    padding: 3px;
+}
+
+.mod-matter-list td.estimate input {
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+    display: block;
+    line-height: 20px;
+    outline: none;
+    padding: 2px;
+    width: 80px;
+}
+
+.mod-matter-list td.estimate input:focus {
+    box-shadow: 0 0 5px #00A3D9;
+    border: 1px solid #00A3D9;
+}
+
+.mod-matter-list .warning {
+    color: #C00;
+}
+
+.mod-matter-list .status span {
+    color: #CCC;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.mod-matter-list .status span:before {
+    background-color: #0C0;
+    border-radius: 10px;
+    content: '';
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+.mod-matter-list .status span.closed:before {
+    background-color: #C00 ;
+}

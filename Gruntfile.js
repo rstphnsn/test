@@ -245,40 +245,6 @@ module.exports = function (grunt) {
                         {
                             match: 'env',
                             replacement: '<%= local.env %>'
-                        },
-                        {
-                            match: 'service_url',
-                            replacement: '<%= local.service_url %>'
-                        },
-                        {
-                            match: 'cookie_length',
-                            replacement: '<%= local.cookie_length %>'
-                        }
-                    ]
-                },
-                files: [
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: ['dev/js/app/config/constants.js'],
-                        dest: 'html/assets/js/app/config/'
-                    }
-                ]
-            },
-            vmd: {
-                options: {
-                    patterns: [
-                        {
-                            match: 'env',
-                            replacement: '<%= vmd.env %>'
-                        },
-                        {
-                            match: 'service_url',
-                            replacement: '<%= vmd.service_url %>'
-                        },
-                        {
-                            match: 'cookie_length',
-                            replacement: '<%= vmd.cookie_length %>'
                         }
                     ]
                 },

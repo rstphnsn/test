@@ -8,13 +8,6 @@ window.app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvi
             url: '/',
             templateUrl: 'templates/home.html'
         }
-    )
-
-    .state('page',
-        {
-            url: '/page',
-            templateUrl: 'templates/page.html'
-        }
     );
 
     $urlRouterProvider.otherwise('/');

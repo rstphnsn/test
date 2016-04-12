@@ -1,7 +1,7 @@
 {
-  "name": "base-project-angular",
+  "name": "apperio-tes",
   "version": "1.0.0",
-  "description": "Base Project for Angular.js",
+  "description": "Apperio test Angular.js",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt test"
