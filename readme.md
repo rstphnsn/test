@@ -6,7 +6,7 @@
 
 Clone the repo
 
-`git clone https://github.com/rstphnsn/apperio.git apperio && cd apperio`
+`git clone https://github.com/rstphnsn/test.git test && cd test`
 
 Install the app’s node dependencies
 
